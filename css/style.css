@@ -64,6 +64,15 @@ body {
     background-color: #fff;
 }
 
+.items {
+
+}
+
+.items:hover {
+    /*color: #ff8000;*/
+    background-color: #ff8000 !important;
+}
+
 [tabindex="-1"]:focus {
     outline: 0 !important;
 }
