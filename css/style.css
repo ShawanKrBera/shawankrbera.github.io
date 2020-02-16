@@ -2791,7 +2791,6 @@ fieldset:disabled a.btn {
     border-color: #ff8000;
 }
 
-
 .tag {
     height: 32px !important;
     font-size: 12px !important;
@@ -3102,43 +3101,42 @@ fieldset:disabled a.btn {
     background-color: transparent;
 }
 
-
 .slidecontainer {
-  width: 100%;
+    width: 100%;
 }
 
 .slider {
-  -webkit-appearance: none;
-  width: 100%;
-  height: 15px;
-  border-radius: 5px;
-  background: #d3d3d3;
-  outline: none;
-  opacity: 0.7;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
 }
 
 .slider:hover {
-  opacity: 1;
+    opacity: 1;
 }
 
 .slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #ff8000;
-  cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #ff8000;
+    cursor: pointer;
 }
 
 .slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #ff6200;
-  cursor: pointer;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #ff6200;
+    cursor: pointer;
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
@@ -4638,7 +4636,6 @@ input[type="button"].btn-block {
 .nav-pills .nav-link {
     border-radius: 0.25rem;
 }
-
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
@@ -13358,8 +13355,8 @@ textarea.form-control {
 
 .block-21 .blog-img {
     display: block;
-    height: 80px;
-    width: 80px;
+    height: 110px;
+    width: 250px;
 }
 
 .block-21 .text {
@@ -13421,7 +13418,17 @@ textarea.form-control {
 }
 
 .tagcloud a:hover {
-    border: 1px solid #000;
+    /*border: 1px solid #000;*/
+    background: #ff8000;
+    border: 1px solid #ff4d00;
+    color: #fff;
+}
+
+.div-active {
+    /*border: 1px solid #000;*/
+    background: #ff8000 !important;
+    border: 1px solid #ff4d00 !important;
+    color: #fff !important;
 }
 
 .comment-form-wrap {
