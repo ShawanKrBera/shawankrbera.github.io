@@ -11286,7 +11286,8 @@ h1, h2, h3, h4, h5,
 }
 
 .ftco-navbar-light {
-    background: transparent !important;
+    //background: transparent !important;
+    background: #ffffff !important;
     z-index: 3;
     padding: 0;
 }
@@ -13421,8 +13422,8 @@ textarea.form-control {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
 }
 
 .tagcloud a:hover {
