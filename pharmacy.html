@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Happy Health</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<nav class="navbar py-4 navbar-expand-lg ftco_navbar navbar-light bg-light flex-row d-none d-md-block">
+    <div class="container">
+        <div class="row no-gutters d-flex align-items-start align-items-center px-3 px-md-0 col-lg-12">
+            <div class="col-lg-2 pr-4 align-items-center">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
+            </div>
+            <div class="col-lg-10">
+                <div class="row d-flex col-lg-12">
+                    <div class="col-md-6 pr-4 d-flex topper align-items-center">
+                        <div class="input-group"><input placeholder="Search" type="text" ng-model="searchField"
+                                                        class="form-control form-control-sm"> <span
+                                class="input-group-append">
+                                <button type="button" class="btn btn-sm btn-primary">
+                                    Go!
+                                </button> </span></div>
+                    </div>
+                    <div class="col-md pr-6 d-flex topper align-items-center">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light sticky" id="ftco-navbar">
+    <div class="container d-flex align-items-center">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="oi oi-menu"></span> Menu
+        </button>
+        <p class="button-custom order-lg-last mb-0"><a href="appointment.html" class="btn btn-primary py-2 px-3">Sign
+            In</a></p>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link pl-0">Home</a></li>
+                <li class="nav-item"><a href="hospital.html" class="nav-link">Hospitals</a></li>
+                <li class="nav-item"><a href="nursing_home.html" class="nav-link">Nursing Homes</a></li>
+                <li class="nav-item"><a href="clinic.html" class="nav-link">Clinics</a></li>
+                <li class="nav-item"><a href="ambulance.html" class="nav-link">Ambulances</a></li>
+                <li class="nav-item active"><a href="blood_bank.html" class="nav-link">Blood Banks</a></li>
+                <li class="nav-item"><a href="doctors.html" class="nav-link">Doctors</a></li>
+                <li class="nav-item"><a href="pharmacy.html" class="nav-link">Pharmacies</a></li>
+                <li class="nav-item"><a href="nursing_services.html" class="nav-link">Nursing Services</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- END nav -->
+
+<section class="ftco-section bg-light" style="padding-top: 20px !important;padding-bottom: 0px !important;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 ftco-animate">
+                <div class="form-group">
+                    <div class="form-field">
+                        <div class="select-wrap">
+                            <select name="" id="" class="form-control">
+                                <option value="">Select Your Services</option>
+                                <option value="">Allopathy</option>
+                                <option value="">Homeopathy</option>
+                                <option value="">Ayurvedic</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 ftco-animate">
+                <div class="form-group">
+                    <div class="form-field">
+                        <div class="select-wrap">
+                            <div class="input-group"><input placeholder="Where in Kolkata" type="text"
+                                                            ng-model="searchField"
+                                                            class="form-control form-control-sm"> <span
+                                    class="input-group-append">
+                                <button type="button" class="btn btn-sm btn-primary" ng-click="searchConnection()">
+                                    <span class="icon icon-map-marker"></span>
+                                </button> </span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 ftco-animate">
+                <div class="form-group">
+                    <div class="form-field">
+                        <div class="select-wrap">
+
+                            <div class="slidecontainer">
+                                <input type="range" min="1" max="100" value="5" class="slider" id="myRange">
+
+                                <p>Distance from Me: <span id="demo"></span>Km</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 ftco-animate">
+                <div class="form-group">
+                    <div class="form-field">
+                        <div class="select-wrap">
+                            <p>Popularity <img src="images/star-2.png">
+                                <a href="#"><img src="images/star-2.png"></a>
+                                <a href="#"><img src="images/star-2.png"></a>
+                                <a href="#"><img src="images/star-1.png"></a>
+                                <a href="#"><img src="images/star-1.png"></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 ftco-animate">
+                <div><img src="images/check.png">&nbsp;&nbsp;Home Delivery Available</div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="ftco-section bg-light" style="padding: 1em 0 !important;">
+<div class="container">
+<div class="row">
+<div class="col-md-4 ftco-animate">
+    <div class="blog-entry" style="border: 1px solid #e6e6e6;">
+        <a href="hospital_details.html" class="block-20"
+           style="background-image: url('images/apollo-pharmacy-salt-lake-city-sector-1-kolkata-chemists-4fpiwz4.jpg');">
+        </a>
+
+        <div class="text bg-white p-4">
+            <div class="heading" style="margin-bottom: 0px !important;"><a href="#">Apollo Pharmacy </a></div>
+
+            <div>
+                <img src="images/rating.png"> &nbsp; 2 Votes &nbsp;
+                <a href="#" class="btn btn-primary tag"><img src="images/share.png"></a>
+            </div>
+
+            <div style="margin-top: 10px;">
+                <a href="#" class="btn btn-primary tag">Allopathy</a>
+                <a href="#" class="btn btn-primary" style="background: #ff800026;color: black;font-size: 12px;">Home
+                    Delivery Available</a>
+            </div>
+
+            <div style="margin-top: 10px;">
+                <span class="icon icon-map-marker"></span> &nbsp;<span class="text">BF43, Ground Floor, Salt Lake City Sector 1, Kolkata - 700064</span>
+            </div>
+
+            <div style="margin-top: 10px;">
+                <span class="icon icon-phone"></span> &nbsp;<span class="text">033 23510620</span>
+            </div>
+            <div style="margin-top: 10px;background-color: #a9a8a81a;padding-left: 5px;">
+                <span style="font-weight: 500;"> Open: </span> &nbsp;<span
+                    class="text">9AM - 10PM</span>
+            </div>
+
+            <div class="d-flex align-items-center mt-4">
+                <p class="mb-0"><a href="hospital_details.html" class="btn btn-primary">Details <span
+                        class="ion-ios-arrow-round-forward"></span></a></p>
+
+                <p class="ml-auto mb-0">
+                    <a href="#" class="meta-chat"><span class="icon-chat"></span> 30</a> &nbsp;&nbsp;
+                    <a href="#" class="meta-chat"><span class="icon icon-map-marker"></span> 3.5Km</a>
+
+                </p>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-4 ftco-animate">
+    <div class="blog-entry" style="border: 1px solid #e6e6e6;">
+        <a href="blog-single.html" class="block-20"
+           style="background-image: url('images/quickest-life-kolkata-1ny2n847lz.jpg');">
+        </a>
+
+        <div class="text bg-white p-4">
+            <div class="heading" style="margin-bottom: 0px !important;"><a href="#">Quickest Life</a></div>
+
+            <div>
+                <img src="images/rating.png"> 20 Votes &nbsp;
+                <a href="#" class="btn btn-primary tag"><img src="images/share.png"></a>
+            </div>
+
+            <div style="margin-top: 10px;">
+                <a href="#" class="btn btn-primary tag">Allopathy</a>
+                <a href="#" class="btn btn-primary" style="background: #ff800026;color: black;font-size: 12px;">Home
+                    Delivery Available</a>
+            </div>
+
+            <div style="margin-top: 10px;">
+                <span class="icon icon-map-marker"></span> &nbsp;<span class="text">111, Feeder Road, Belgharia, Kolkata - 700056, Chaudhury Para</span>
+            </div>
+
+            <div style="margin-top: 10px;">
+                <span class="icon icon-phone"></span> &nbsp;<span class="text">9152392963</span>
+            </div>
+            <div style="margin-top: 10px;background-color: #a9a8a81a;padding-left: 5px;">
+                <span style="font-weight: 500;"> Open: </span> &nbsp;<span class="text">9AM - 10PM</span>
+            </div>
+
+            <div class="d-flex align-items-center mt-4">
+                <p class="mb-0"><a href="hospital_details.html" class="btn btn-primary">Details <span
+                        class="ion-ios-arrow-round-forward"></span></a></p>
+
+                <p class="ml-auto mb-0">
+                    <a href="#" class="meta-chat"><span class="icon-chat"></span> 50</a> &nbsp;&nbsp;
+                    <a href="#" class="meta-chat"><span class="icon icon-map-marker"></span> 3Km</a>
+
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-4 ftco-animate">
+    <div class="blog-entry" style="border: 1px solid #e6e6e6;">
+        <a href="blog-single.html" class="block-20"
+           style="background-image: url('images/park-blue-print-kolkata-vjtcwl63tc.jpg');">
+        </a>
+
+        <div class="text bg-white p-4">
+            <div class="heading" style="margin-bottom: 0px !important;"><a href="#">Park Blue Print</a>
+            </div>
+
+            <div>
+                <img src="images/rating.png"> &nbsp; 20 Votes &nbsp;
+                <a href="#" class="btn btn-primary tag"><img src="images/share.png"></a>
+            </div>
+
+            <div style="margin-top: 10px;">
+                <a href="#" class="btn btn-primary tag">Allopathy</a>
+            </div>
+
+            <div style="margin-top: 10px;">
+                <span class="icon icon-map-marker"></span> &nbsp;<span class="text">30 A, Jawaharlal Nehru Road, Park Street, Kolkata - 700016</span>
+            </div>
+
+            <div style="margin-top: 10px;">
+                <span class="icon icon-phone"></span> &nbsp;<span class="text">9152404016</span>
+            </div>
+            <div style="margin-top: 10px;background-color: #a9a8a81a;padding-left: 5px;">
+                <span style="font-weight: 500;"> Open: </span> &nbsp;<span class="text">8AM - 10PM</span>
+            </div>
+            <div class="d-flex align-items-center mt-4">
+                <p class="mb-0"><a href="hospital_details.html" class="btn btn-primary">Details <span
+                        class="ion-ios-arrow-round-forward"></span></a></p>
+
+                <p class="ml-auto mb-0">
+                    <a href="#" class="meta-chat"><span class="icon-chat"></span> 50</a>&nbsp;&nbsp;
+                    <a href="#" class="meta-chat"><span class="icon icon-map-marker"></span> 10.1Km</a>
+
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4 ftco-animate">
+    <div class="blog-entry" style="border: 1px solid #e6e6e6;">
+        <a href="blog-single.html" class="block-20"
+           style="background-image: url('images/park-blue-print-kolkata-vjtcwl63tc.jpg');">
+        </a>
+
+        <div class="text bg-white p-4">
+            <div class="heading" style="margin-bottom: 0px !important;"><a href="#">Park Blue Print</a>
+            </div>
+
+            <div>
+                <img src="images/rating.png"> &nbsp; 20 Votes &nbsp;
+                <a href="#" class="btn btn-primary tag"><img src="images/share.png"></a>
+            </div>
+
+            <div style="margin-top: 10px;">
+                <a href="#" class="btn btn-primary tag">Allopathy</a>
+            </div>
+
+            <div style="margin-top: 10px;">
+                <span class="icon icon-map-marker"></span> &nbsp;<span class="text">30 A, Jawaharlal Nehru Road, Park Street, Kolkata - 700016</span>
+            </div>
+
+            <div style="margin-top: 10px;">
+                <span class="icon icon-phone"></span> &nbsp;<span class="text">9152404016</span>
+            </div>
+            <div style="margin-top: 10px;background-color: #a9a8a81a;padding-left: 5px;">
+                <span style="font-weight: 500;"> Open: </span> &nbsp;<span class="text">8AM - 10PM</span>
+            </div>
+            <div class="d-flex align-items-center mt-4">
+                <p class="mb-0"><a href="hospital_details.html" class="btn btn-primary">Details <span
+                        class="ion-ios-arrow-round-forward"></span></a></p>
+
+                <p class="ml-auto mb-0">
+                    <a href="#" class="meta-chat"><span class="icon-chat"></span> 50</a>&nbsp;&nbsp;
+                    <a href="#" class="meta-chat"><span class="icon icon-map-marker"></span> 10.1Km</a>
+
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-4 ftco-animate">
+    <div class="blog-entry" style="border: 1px solid #e6e6e6;">
+        <a href="hospital_details.html" class="block-20"
+           style="background-image: url('images/apollo-pharmacy-salt-lake-city-sector-1-kolkata-chemists-4fpiwz4.jpg');">
+        </a>
+
+        <div class="text bg-white p-4">
+            <div class="heading" style="margin-bottom: 0px !important;"><a href="#">Apollo Pharmacy </a></div>
+
+            <div>
+                <img src="images/rating.png"> &nbsp; 2 Votes &nbsp;
+                <a href="#" class="btn btn-primary tag"><img src="images/share.png"></a>
+            </div>
+
+            <div style="margin-top: 10px;">
+                <a href="#" class="btn btn-primary tag">Allopathy</a>
+                <a href="#" class="btn btn-primary" style="background: #ff800026;color: black;font-size: 12px;">Home
+                    Delivery Available</a>
+            </div>
+
+            <div style="margin-top: 10px;">
+                <span class="icon icon-map-marker"></span> &nbsp;<span class="text">BF43, Ground Floor, Salt Lake City Sector 1, Kolkata - 700064</span>
+            </div>
+
+            <div style="margin-top: 10px;">
+                <span class="icon icon-phone"></span> &nbsp;<span class="text">033 23510620</span>
+            </div>
+            <div style="margin-top: 10px;background-color: #a9a8a81a;padding-left: 5px;">
+                <span style="font-weight: 500;"> Open: </span> &nbsp;<span
+                    class="text">9AM - 10PM</span>
+            </div>
+
+            <div class="d-flex align-items-center mt-4">
+                <p class="mb-0"><a href="hospital_details.html" class="btn btn-primary">Details <span
+                        class="ion-ios-arrow-round-forward"></span></a></p>
+
+                <p class="ml-auto mb-0">
+                    <a href="#" class="meta-chat"><span class="icon-chat"></span> 30</a> &nbsp;&nbsp;
+                    <a href="#" class="meta-chat"><span class="icon icon-map-marker"></span> 3.5Km</a>
+
+                </p>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-4 ftco-animate">
+    <div class="blog-entry" style="border: 1px solid #e6e6e6;">
+        <a href="blog-single.html" class="block-20"
+           style="background-image: url('images/quickest-life-kolkata-1ny2n847lz.jpg');">
+        </a>
+
+        <div class="text bg-white p-4">
+            <div class="heading" style="margin-bottom: 0px !important;"><a href="#">Quickest Life</a></div>
+
+            <div>
+                <img src="images/rating.png"> 20 Votes &nbsp;
+                <a href="#" class="btn btn-primary tag"><img src="images/share.png"></a>
+            </div>
+
+            <div style="margin-top: 10px;">
+                <a href="#" class="btn btn-primary tag">Allopathy</a>
+                <a href="#" class="btn btn-primary" style="background: #ff800026;color: black;font-size: 12px;">Home
+                    Delivery Available</a>
+            </div>
+
+            <div style="margin-top: 10px;">
+                <span class="icon icon-map-marker"></span> &nbsp;<span class="text">111, Feeder Road, Belgharia, Kolkata - 700056, Chaudhury Para</span>
+            </div>
+
+            <div style="margin-top: 10px;">
+                <span class="icon icon-phone"></span> &nbsp;<span class="text">9152392963</span>
+            </div>
+            <div style="margin-top: 10px;background-color: #a9a8a81a;padding-left: 5px;">
+                <span style="font-weight: 500;"> Open: </span> &nbsp;<span class="text">9AM - 10PM</span>
+            </div>
+
+            <div class="d-flex align-items-center mt-4">
+                <p class="mb-0"><a href="hospital_details.html" class="btn btn-primary">Details <span
+                        class="ion-ios-arrow-round-forward"></span></a></p>
+
+                <p class="ml-auto mb-0">
+                    <a href="#" class="meta-chat"><span class="icon-chat"></span> 50</a> &nbsp;&nbsp;
+                    <a href="#" class="meta-chat"><span class="icon icon-map-marker"></span> 3Km</a>
+
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4 ftco-animate">
+    <div class="blog-entry" style="border: 1px solid #e6e6e6;">
+        <a href="hospital_details.html" class="block-20"
+           style="background-image: url('images/apollo-pharmacy-salt-lake-city-sector-1-kolkata-chemists-4fpiwz4.jpg');">
+        </a>
+
+        <div class="text bg-white p-4">
+            <div class="heading" style="margin-bottom: 0px !important;"><a href="#">Apollo Pharmacy </a></div>
+
+            <div>
+                <img src="images/rating.png"> &nbsp; 2 Votes &nbsp;
+                <a href="#" class="btn btn-primary tag"><img src="images/share.png"></a>
+            </div>
+
+            <div style="margin-top: 10px;">
+                <a href="#" class="btn btn-primary tag">Allopathy</a>
+                <a href="#" class="btn btn-primary" style="background: #ff800026;color: black;font-size: 12px;">Home
+                    Delivery Available</a>
+            </div>
+
+            <div style="margin-top: 10px;">
+                <span class="icon icon-map-marker"></span> &nbsp;<span class="text">BF43, Ground Floor, Salt Lake City Sector 1, Kolkata - 700064</span>
+            </div>
+
+            <div style="margin-top: 10px;">
+                <span class="icon icon-phone"></span> &nbsp;<span class="text">033 23510620</span>
+            </div>
+            <div style="margin-top: 10px;background-color: #a9a8a81a;padding-left: 5px;">
+                <span style="font-weight: 500;"> Open: </span> &nbsp;<span
+                    class="text">9AM - 10PM</span>
+            </div>
+
+            <div class="d-flex align-items-center mt-4">
+                <p class="mb-0"><a href="hospital_details.html" class="btn btn-primary">Details <span
+                        class="ion-ios-arrow-round-forward"></span></a></p>
+
+                <p class="ml-auto mb-0">
+                    <a href="#" class="meta-chat"><span class="icon-chat"></span> 30</a> &nbsp;&nbsp;
+                    <a href="#" class="meta-chat"><span class="icon icon-map-marker"></span> 3.5Km</a>
+
+                </p>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-4 ftco-animate">
+    <div class="blog-entry" style="border: 1px solid #e6e6e6;">
+        <a href="blog-single.html" class="block-20"
+           style="background-image: url('images/park-blue-print-kolkata-vjtcwl63tc.jpg');">
+        </a>
+
+        <div class="text bg-white p-4">
+            <div class="heading" style="margin-bottom: 0px !important;"><a href="#">Park Blue Print</a>
+            </div>
+
+            <div>
+                <img src="images/rating.png"> &nbsp; 20 Votes &nbsp;
+                <a href="#" class="btn btn-primary tag"><img src="images/share.png"></a>
+            </div>
+
+            <div style="margin-top: 10px;">
+                <a href="#" class="btn btn-primary tag">Allopathy</a>
+            </div>
+
+            <div style="margin-top: 10px;">
+                <span class="icon icon-map-marker"></span> &nbsp;<span class="text">30 A, Jawaharlal Nehru Road, Park Street, Kolkata - 700016</span>
+            </div>
+
+            <div style="margin-top: 10px;">
+                <span class="icon icon-phone"></span> &nbsp;<span class="text">9152404016</span>
+            </div>
+            <div style="margin-top: 10px;background-color: #a9a8a81a;padding-left: 5px;">
+                <span style="font-weight: 500;"> Open: </span> &nbsp;<span class="text">8AM - 10PM</span>
+            </div>
+            <div class="d-flex align-items-center mt-4">
+                <p class="mb-0"><a href="hospital_details.html" class="btn btn-primary">Details <span
+                        class="ion-ios-arrow-round-forward"></span></a></p>
+
+                <p class="ml-auto mb-0">
+                    <a href="#" class="meta-chat"><span class="icon-chat"></span> 50</a>&nbsp;&nbsp;
+                    <a href="#" class="meta-chat"><span class="icon icon-map-marker"></span> 10.1Km</a>
+
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-4 ftco-animate">
+    <div class="blog-entry" style="border: 1px solid #e6e6e6;">
+        <a href="blog-single.html" class="block-20"
+           style="background-image: url('images/quickest-life-kolkata-1ny2n847lz.jpg');">
+        </a>
+
+        <div class="text bg-white p-4">
+            <div class="heading" style="margin-bottom: 0px !important;"><a href="#">Quickest Life</a></div>
+
+            <div>
+                <img src="images/rating.png"> 20 Votes &nbsp;
+                <a href="#" class="btn btn-primary tag"><img src="images/share.png"></a>
+            </div>
+
+            <div style="margin-top: 10px;">
+                <a href="#" class="btn btn-primary tag">Allopathy</a>
+                <a href="#" class="btn btn-primary" style="background: #ff800026;color: black;font-size: 12px;">Home
+                    Delivery Available</a>
+            </div>
+
+            <div style="margin-top: 10px;">
+                <span class="icon icon-map-marker"></span> &nbsp;<span class="text">111, Feeder Road, Belgharia, Kolkata - 700056, Chaudhury Para</span>
+            </div>
+
+            <div style="margin-top: 10px;">
+                <span class="icon icon-phone"></span> &nbsp;<span class="text">9152392963</span>
+            </div>
+            <div style="margin-top: 10px;background-color: #a9a8a81a;padding-left: 5px;">
+                <span style="font-weight: 500;"> Open: </span> &nbsp;<span class="text">9AM - 10PM</span>
+            </div>
+
+            <div class="d-flex align-items-center mt-4">
+                <p class="mb-0"><a href="hospital_details.html" class="btn btn-primary">Details <span
+                        class="ion-ios-arrow-round-forward"></span></a></p>
+
+                <p class="ml-auto mb-0">
+                    <a href="#" class="meta-chat"><span class="icon-chat"></span> 50</a> &nbsp;&nbsp;
+                    <a href="#" class="meta-chat"><span class="icon icon-map-marker"></span> 3Km</a>
+
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+<div class="row no-gutters my-5">
+    <div class="col text-center">
+        <div class="block-27">
+            <ul>
+                <li><a href="#"><i class="ion-ios-arrow-back"></i></a></li>
+                <li class="active"><span>1</span></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#"><i class="ion-ios-arrow-forward"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+
+<footer class="ftco-footer ftco-bg-dark ftco-section">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-5">
+                    <h2 class="ftco-heading-2 logo">Happy<span>Health</span></h2>
+
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live the blind texts.</p>
+                </div>
+                <div class="ftco-footer-widget mb-5">
+                    <h2 class="ftco-heading-2">Have a Questions?</h2>
+
+                    <div class="block-23 mb-3">
+                        <ul>
+                            <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span>
+                            </li>
+                            <li><a href="hospital.html#"><span class="icon icon-phone"></span><span
+                                    class="text">+2 392 3929 210</span></a></li>
+                            <li><a href="hospital.html#"><span class="icon icon-envelope"></span><span class="text">info@three-dreamers.com</span></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+                        <li class="ftco-animate"><a href="hospital.html#"><span class="icon-twitter"></span></a></li>
+                        <li class="ftco-animate"><a href="hospital.html#"><span class="icon-facebook"></span></a></li>
+                        <li class="ftco-animate"><a href="hospital.html#"><span class="icon-instagram"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-5 ml-md-4">
+                    <h2 class="ftco-heading-2">Links</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="hospital.html#"><span class="ion-ios-arrow-round-forward mr-2"></span>Home</a></li>
+                        <li><a href="hospital.html#"><span class="ion-ios-arrow-round-forward mr-2"></span>Hospitals</a>
+                        </li>
+                        <li><a href="hospital.html#"><span class="ion-ios-arrow-round-forward mr-2"></span>Nursing Homes</a>
+                        </li>
+                        <li><a href="hospital.html#"><span class="ion-ios-arrow-round-forward mr-2"></span>Clinics</a>
+                        </li>
+                        <li><a href="hospital.html#"><span
+                                class="ion-ios-arrow-round-forward mr-2"></span>Ambulances</a></li>
+                        <li><a href="hospital.html#"><span class="ion-ios-arrow-round-forward mr-2"></span>Blood
+                            Banks</a></li>
+                        <li><a href="hospital.html#"><span class="ion-ios-arrow-round-forward mr-2"></span>Doctors</a>
+                        </li>
+                        <li><a href="hospital.html#"><span
+                                class="ion-ios-arrow-round-forward mr-2"></span>Pharmacies</a></li>
+                        <li><a href="hospital.html#"><span
+                                class="ion-ios-arrow-round-forward mr-2"></span>Departments</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-5">
+                    <h2 class="ftco-heading-2">Recent Blog</h2>
+
+                    <div class="block-21 mb-4 d-flex">
+                        <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
+
+                        <div class="text">
+                            <h3 class="heading"><a href="hospital.html#">Even the all-powerful Pointing has no control
+                                about</a></h3>
+
+                            <div class="meta">
+                                <div><a href="hospital.html#"><span class="icon-calendar"></span> Dec 25, 2018</a></div>
+                                <div><a href="hospital.html#"><span class="icon-person"></span> Admin</a></div>
+                                <div><a href="hospital.html#"><span class="icon-chat"></span> 19</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-21 mb-5 d-flex">
+                        <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
+
+                        <div class="text">
+                            <h3 class="heading"><a href="hospital.html#">Even the all-powerful Pointing has no control
+                                about</a></h3>
+
+                            <div class="meta">
+                                <div><a href="hospital.html#"><span class="icon-calendar"></span> Dec 25, 2018</a></div>
+                                <div><a href="hospital.html#"><span class="icon-person"></span> Admin</a></div>
+                                <div><a href="hospital.html#"><span class="icon-chat"></span> 19</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-21 mb-4 d-flex">
+                        <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
+
+                        <div class="text">
+                            <h3 class="heading"><a href="hospital.html#">Even the all-powerful Pointing has no control
+                                about</a></h3>
+
+                            <div class="meta">
+                                <div><a href="hospital.html#"><span class="icon-calendar"></span> Dec 25, 2018</a></div>
+                                <div><a href="hospital.html#"><span class="icon-person"></span> Admin</a></div>
+                                <div><a href="hospital.html#"><span class="icon-chat"></span> 19</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md">
+                <!--<div class="ftco-footer-widget mb-5">
+                    <h2 class="ftco-heading-2">Opening Hours</h2>
+
+                    <h3 class="open-hours pl-4"><span class="ion-ios-time mr-3"></span>We are open 24/7</h3>
+                </div>-->
+                <div class="ftco-footer-widget mb-5">
+                    <h2 class="ftco-heading-2">Subscribe Us!</h2>
+
+                    <form action="hospital.html#" class="subscribe-form">
+                        <div class="form-group">
+                            <input type="text" class="form-control mb-2 text-center" placeholder="Enter email address">
+                            <input type="submit" value="Subscribe" class="form-control submit px-3">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+
+                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                    All rights reserved | 3Dreamers
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- loader -->
+<div id="ftco-loader" class="show fullscreen">
+    <svg class="circular" width="48px" height="48px">
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#F96D00"/>
+    </svg>
+</div>
+
+<!-- map -->
+<div class="modal" tabindex="-1" role="dialog" id="exampleModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="col-md-12 d-flex align-items-stretch">
+                    <div id="map"></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/jquery.timepicker.min.js"></script>
+<script src="js/scrollax.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+<script src="js/google-map.js"></script>
+<script src="js/main.js"></script>
+<script>
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value;
+
+    slider.oninput = function() {
+        output.innerHTML = this.value;
+    }
+</script>
+</body>
+</html>
